@@ -25,17 +25,18 @@ const logTodos = () => {
 }
 
 const populateTodos = () => {
-  const title = arrayOfTodos[0].title
-  console.log(title)
   
-  const list = document.getElementById('todo-list')
-  console.log(list)
+  const list = document.getElementById('todo-list');
+
+  for (let i = 0; i < arrayOfTodos.length; i++) {
+    const item = document.createElement("li");
+    
+    const title = arrayOfTodos[i].title;
   
-  const item = document.createElement("li")
-  console.log(item)
+    var newItem = document.createTextNode(title);
+
+    item.appendChild(newItem);
   
-  var newItem = document.createTextNode(title)
-  item.appendChild(newItem)
-  
-  list.appendChild(newItem)
+    list.appendChild(item);
+  }
 }
