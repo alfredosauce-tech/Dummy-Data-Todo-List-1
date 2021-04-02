@@ -40,3 +40,25 @@ const populateTodos = () => {
     list.appendChild(item);
   }
 }
+
+// Fetch the same data.
+// Store the data in a variable.
+// Add an input for the userID. This input should only take in a number from 1 - 10.
+// Add a button that when clicked will:
+// - Clear the previous todos from the view
+// - Populate it with only todos with the userID that matches the number inputted
+// - Store the currently filtered todos in a variable so that . . .
+// You can create two more buttons that when clicked:
+// - Removes those todos
+// - Shows only todos that are either completed or not completed
+// HINT 1: When you're removing and repopulating, remember that you're removing them from the DOM and not the array.
+
+// const userTodos = () => {
+//   for (let i = 0; i < arrayOfTodos.length; i++) {
+//     const user = arrayOfTodos[i].userId;
+
+//     const id = document.getElementById('id').value;
+
+//     if ()
+//   }
+// }
