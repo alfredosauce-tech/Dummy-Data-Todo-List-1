@@ -38,6 +38,14 @@ const populateTodos = () => {
     item.appendChild(newItem);
   
     list.appendChild(item);
+
+    var completed = arrayOfTodos[i].completed;
+
+    if (completed === false) {
+      item.style.color = "#f05945";
+    } else {
+      item.style.color = "#5eaaa8";
+    }
   }
 }
 
@@ -53,12 +61,14 @@ const populateTodos = () => {
 // - Shows only todos that are either completed or not completed
 // HINT 1: When you're removing and repopulating, remember that you're removing them from the DOM and not the array.
 
-// const userTodos = () => {
-//   for (let i = 0; i < arrayOfTodos.length; i++) {
-//     const user = arrayOfTodos[i].userId;
+const userTodos = () => {
+  for (let i = 0; i < arrayOfTodos.length; i++) {
+    var user = arrayOfTodos[i].userId;
 
-//     const id = document.getElementById('id').value;
+    const id = document.getElementById('id').value;
 
-//     if ()
-//   }
-// }
+    if (user === id) {
+      
+    }
+  } 
+}
