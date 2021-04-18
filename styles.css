@@ -1,50 +1,71 @@
 * {
   box-sizing: border-box;
   font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+}
+
+.main-container {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgb(176, 181, 252), rgb(255, 255, 157));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: large;
 }
 
-body {
-  background-color: #f7f3e9;
+h1 {
+  margin-top: 3%;
+  width: 560px;
+  height: 55px;
+  font-size: 25px;
+  font-family: 'Rock Salt';
+  text-align: center;
+  color: rgb(71, 63, 184);
+  background-color: rgba(167, 171, 231, 0.452);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.button-container, .list {
+  width: 560px;
+  padding: 1%;
+  background-color: rgba(253, 251, 251, 0.425);
+}
+
+.button-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.container {
-  margin-top: 1%;
-  display: flex;
-  flex-direction: column;
-}
-
-h1 {
-  padding: 10px 0;
-  font-size: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: 'Nunito', sans-serif;
-  border-top: solid #f05945;
-  border-bottom: solid #f05945;
+.list {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 button {
  margin: 5px;
- padding: 10px 15px;
+ padding: 8px 15px;
  border: none;
- border-radius: 3px;
- background-color: #5eaaa8;
- color: white;
+ border-radius: 45px;
+ color: rgb(71, 63, 184);
+ background-color: rgba(252, 252, 252, 0.795);
  cursor: pointer;
+ font-size: 16px;
 }
 
 button:hover {
-  background-color: #a3d2ca;
-  color: rgb(10, 10, 10);
+  background-color: rgb(255, 255, 157);
+  transition: .5s ease;
 }
 
 input {
+  width: 100px;
   margin: 0 5px;
+  padding: 8px 15px;
   background-color: whitesmoke;
   border: none;
-  border-radius: 5px;
- }
-
+  border-radius: 45px;
+  font-size: 16px;
+}

@@ -28,7 +28,7 @@ const populateTodos = () => {
   
   const list = document.getElementById('todo-list');
 
-  for (let i = 0; i < arrayOfTodos.length; i++) {
+  for (let i = 0; i < (arrayOfTodos.length)/10; i++) {
     const item = document.createElement("li");
     
     const title = arrayOfTodos[i].title;
@@ -44,7 +44,7 @@ const populateTodos = () => {
     if (completed === false) {
       item.style.color = "#f05945";
     } else {
-      item.style.color = "#5eaaa8";
+      item.style.color = "rgba(71, 63, 184, 0.575)";
     }
   }
 }
@@ -62,13 +62,21 @@ const populateTodos = () => {
 // HINT 1: When you're removing and repopulating, remember that you're removing them from the DOM and not the array.
 
 const userTodos = () => {
+  const id = document.getElementById('id').value;
+
   for (let i = 0; i < arrayOfTodos.length; i++) {
-    var user = arrayOfTodos[i].userId;
+    const userList = arrayOfTodos[i].filter(userId)
 
-    const id = document.getElementById('id').value;
-
-    if (user === id) {
-      
-    }
+    const item = document.createElement("li");
+    
+  
+    var newItem = document.createTextNode(title);
   } 
 }
+
+// const userList = user.filter()
+// var user = arrayOfTodos[i].userId;
+
+const userList = arrayOfTodos.filter(id => id.userId === document.getElementById('id').value)
+
+console.log(userList)
