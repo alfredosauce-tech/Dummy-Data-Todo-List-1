@@ -20,9 +20,10 @@ h1 {
   height: 55px;
   font-size: 25px;
   font-family: 'Rock Salt';
+  color: aliceblue;
   text-align: center;
-  color: rgb(71, 63, 184);
-  background-color: rgba(167, 171, 231, 0.452);
+  text-shadow: 1px 1px 3px rgb(31, 28, 78);
+  background-color: rgba(83, 88, 150, 0.452);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
