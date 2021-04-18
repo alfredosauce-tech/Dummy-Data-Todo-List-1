@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+}
+
+.main-container {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgb(176, 181, 252), rgb(255, 255, 157));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+
+h1 {
+  margin-top: 3%;
+  width: 560px;
+  height: 55px;
+  font-size: 25px;
+  font-family: 'Rock Salt';
+  color: aliceblue;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgb(31, 28, 78);
+  background-color: rgba(83, 88, 150, 0.452);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.button-container, .list {
+  width: 560px;
+  padding: 1%;
+  background-color: rgba(253, 251, 251, 0.425);
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+button {
+ margin: 5px;
+ padding: 8px 15px;
+ border: none;
+ border-radius: 45px;
+ color: rgb(71, 63, 184);
+ background-color: rgba(252, 252, 252, 0.795);
+ cursor: pointer;
+ font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 157);
+  transition: .5s ease;
+}
+
+input {
+  width: 100px;
+  margin: 0 5px;
+  padding: 8px 15px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 45px;
+  font-size: 16px;
+}
